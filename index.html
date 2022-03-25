@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        video
+        {
+            position: relative;
+        }
+        header
+        {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            position: absolute; 
+            top:0px;
+            padding-top: 10px;
+        }
+        .main
+        {
+            width: 100%;
+            height: 855px;
+            background-color: coral;
+            margin-top: -20px;
+            background-image: url(image/First%20Banner.jpg);
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .but
+        {
+            padding: 20px 20px;
+            text-transform: uppercase;
+            padding-top: 20px;
+            position: absolute;
+            bottom: 100px;
+            right: 25%;
+            font-size: 15px;
+            background-color:white;
+            border-radius: 25px ;
+            border: solid;
+            border-color: red;
+        }   
+        .but i a
+        {
+            color: black;
+            font-family: 'Staatliches', cursive;
+            text-decoration: none;
+            transition: all;
+            transition-duration: 0.7s;
+           
+        }
+        .but:hover
+        {
+            border: solid;
+            border-color: greenyellow;
+           background-color: red;
+           font-size: 16px;
+          
+        }
+        .head ul
+        {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        .head ul li
+        {
+            list-style-type: none;
+            display: inline;
+            margin-left: 20px;
+            margin-right: 20px;       
+            
+        }
+        .head ul li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            position: relative;
+           
+        }
+        .head ul li a::after
+        {
+            content:"";
+            display: inline-block;
+            height: 2px;
+            position: absolute;
+            background-color: red;
+            bottom:0px;
+            left: 0px;
+            right:100%;
+            transition: all;
+            transition-duration: 1s;
+        }
+        .head ul li a:hover::after
+        {
+            content:"";
+            display: inline-block;
+            height: 2px;
+            position: absolute;
+            background-color: red;
+            bottom:0px;
+            left: 0px;
+            right:0px;
+        }
+        .fas
+        {
+            color: white;
+            margin-right: 40px;
+            margin-top: 15px;
+        }
+        .icons ul li
+        {
+           list-style-type: none;
+           display: inline;
+           font-size: 20px;
+        }
+        .icons ul li a i
+        {
+            transition: all ;
+            transition-duration: 0.4s;
+        }
+        .icons ul li a i:hover
+        {
+            color: red;
+            font-size: 30px;
+        }
+        .cardfirst
+        {
+            background-image: url(Studds.jpg);
+            background-attachment: fixed;
+        }
+        .cardsecond
+        {
+            background-image: url(Studds.jpg);
+            background-attachment: fixed;
+        }
+        .logo
+        {
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        .logo2
+        {
+            margin-left: 25px;
+            padding-top: 15px; 
+        }
+        .logo2 h1
+        {
+            color: white;
+            display: inline;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-size: 80px;
+            margin-left: 200px;
+            letter-spacing: 20px;
+        }
+        
+        .cardfirst
+        {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card1
+        {
+            width: 25%;
+            height: 400px;
+            text-align: center;
+            margin-top: 50px;
+           font-size: 15px;
+           transition: all;
+           transition-duration: 0.5s;
+           color: black;
+           border-radius: 50%;
+           background-color: white;
+        }
+        .card1 h1
+        {
+            color: red;
+        }
+        .card1:hover
+        {
+          border: solid 1px; 
+          border-color: red;
+         transform: scale(1.1);
+        }
+        .cardsecond
+        {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card2
+        {
+            width: 25%;
+            height: 275px;
+           
+            margin-top: 50px;
+            transition: all;
+            transition-duration: 0.5s;
+            
+        }
+        .card2:hover
+        {
+            transform: scale(1.1);
+            border:solid 1px;
+            border-color: white
+        }
+        .det
+        {
+            color: white;
+        }
+        .det h1
+        {
+            color: blue;
+        }
+        
+        .ban2
+        {
+            width: 100%;
+            height: 800px;
+            background-color: royalblue;
+            background-image: url(image/Second%20Banner.jpg);
+            width: 100%;
+            background-size: cover;
+        }
+        .but2
+       {
+            padding: 20px 20px;
+            text-transform: uppercase;
+            padding-top: 20px;
+            position: absolute;
+            top: 2850px;
+            right: 43.5%;
+            font-size: 15px;
+            background-color:white;
+            border-radius: 25px ;
+            border: solid;
+            border-color: red;  
+       }
+       .but2 i a
+        {
+            color: black;
+            font-family: 'Staatliches', cursive;
+            text-decoration: none;
+            transition: all;
+            transition-duration: 0.7s;
+           
+        }
+        .but2:hover
+        {
+            border: solid;
+            border-color: greenyellow;
+           background-color: red;
+           font-size: 16px;
+          
+        }
+
+        .footer
+        {
+            width: 100%;
+            height: 400px;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            color: red  ;
+        }
+        .footer ul
+        {
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        .footer ul li
+        {
+            list-style-type: none;
+        }
+        .footer ul li a
+        {
+            color: white;
+            text-decoration: none;
+            line-height: 50px;
+            transition: all;
+            transition-duration: 0.5s;
+        }
+        .footer ul li a:hover
+        {
+            font-size: 17px;
+            color: greenyellow;
+           
+        }
+        
+        .lfooter
+        {
+            width: 100%;
+            height: 200px;
+            background-color: black;
+        }
+        .fab
+        {
+            font-size: 40px;
+            float: right;
+            color: white;
+        }
+       .fab li
+       {
+           display: inline;
+           float: left;
+           margin-left: 100px;
+           padding-right: 30px;
+           padding-top: 30px;
+       }
+       .lfooter ul li a i
+       {
+           transition: all ;
+           transition-duration: 0.5s;
+       }
+       .lfooter ul li a i:hover
+       {
+         
+           font-size: 45px;
+       }
+       .face:hover
+       {
+           color: #3b5998;
+       }
+       .twit:hover
+       {
+           color: #1DA1F2;
+       }
+       .inst:hover
+       {
+        color: red;   
+       }
+       .youtube:hover
+       {
+           color: #FF0000;
+       }
+       .studds
+       {
+        margin-left: 100px;
+       }
+    </style>
+</head>
+<body>
+   <video autoplay muted loop width="100%">
+        <source src="video1.mp4" type="video/mp4">
+    </video>
+    <header>
+        <div class="logo">
+            <img src="Studds.png.png" width="200px">
+        </div>    
+        <nav class="head">
+            <ul>
+                <li> <a href="#">Collections</a></li>
+                <li> <a href="#">Find a Dealer</a></li>
+                <li> <a href="#">Shops</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+         
+        </nav>
+        <div class="icons">
+            <ul>
+                <li><a href="#"><i class="fas fa-search-dollar"></i></a></li>
+                <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <button class="but"> <i><a href="#">Explore Now</a></i></button>
+    </div>
+    <div class="cardfirst">
+        <div class="card1">
+           <img src="image/card helmet 1.png" width="200px">
+           <h1>THUNDER STEEL </h1>
+           <h2>RX-7V</h2>
+           <h3>RACE TESTED</h3>
+        </div>
+        <div class="card1">
+            <img src="image/card helmet 3.png" width="200px">
+            <h1>QUANTIC</h1>
+            <h2>HIGH-SPEED</h2><h3>COMFORT FOR  THE LONG HAULS</h3>
+         </div>
+         <div class="card1">
+            <img src="image/card helmet 4.png" width="200px">
+            <h1>CONCEPT-X</h1><h2>OLD SCHOOL COOL</h2> <h3>MINUS THE COMPROMISES</h3> 
+         </div>
+    </div>
+    <div class="ban2">
+        <button class="but2"> <i><a href="#">Explore Now</a></i></button>
+    </div>
+    <div class="cardsecond">
+        <div class="card2">
+            <video autoplay muted loop width="100%">
+                <source src="video4.mp4" type="video/mp4">
+            </video>
+        <div class="det">
+           <h1>SBH-20</h1>
+           <h4>RACE TESTED</h4>
+        </div>
+        </div>
+        <div class="card2">
+            <video autoplay muted loop width="100%">
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+            <div class="det">
+                <h1>TOUR-X4</h1>
+                <h4>READY FOR ANYTHING</h4>
+             </div>
+        </div>
+        <div class="card2">
+            <video autoplay muted loop width="100%">
+                <source src="video3.mp4" type="video/mp4">
+            </video>
+            <div class="det">
+                <h1>MX-V</h1>
+                <h4>ULTIMATE OFFROAD </h4>
+             </div>
+        </div>
+    </div>
+    <div class="fix">
+     </div>
+    
+    <div class="footer">
+        <div>
+            <ul>
+            <h1>SHOP</h1>
+           
+                <li><a href="#">Motorcycle Helmets</a></li>
+                <li><a href="#">Bike Helmets</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+            <div>
+                <ul>
+            <h1>Company Info</h1>
+            
+                <li><a href="#">About page</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Community partners</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+            <h1>Support Us</h1>
+          
+                <li><a href="#">Product Registration</a></li>
+                <li><a href="#">Helmet Warranty</a></li>
+                <li><a href="#">Returns & Exchange</a></li>
+                <li><a href="#">Crash Replacement</a></li>
+                <li><a href="#">Product FAQ</a></li>
+                <li><a href="#">Size Charts</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lfooter">
+        <ul class="fab">
+            <li><a href="#"><i class="fab fa-facebook-f face"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter twit"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram inst" ></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube youtube"></i></a></li>
+        </ul>
+            <div class="studds">
+            <img src="Studds.png.png" width="250px">
+          </div>
+      </div>
+</body>
+</html>
